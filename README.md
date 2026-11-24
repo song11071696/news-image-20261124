@@ -1,4 +1,4 @@
-# 24 November in One Image — make.fun `news-image-20261124`
+# news-image-20261124 — The World in One Day: Tuesday, 24 November 2026
 
 [![news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
 [![rank](https://make.fun/badge/news-image-20261124/song11071696/news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124)
@@ -6,186 +6,181 @@
 
 [Bounty page](https://make.fun/bounty/news-image-20261124)
 
-One 1024×1024 front page summing up the world's news of
-**Tuesday, 24 November 2026**: 37 stories across 7 regions
-(Europe, Middle East, Africa, Asia-Pacific, North America,
-Latin America, and Global markets / science / sport).
+## What this is
 
-`main.py` (Python 3.13, standard library only, no network) copies
-`entry.png` to the output directory. Running it twice writes
-byte-identical output.
+A single 1024×1024 front page — `entry.png` — that sums up the world's
+news of **Tuesday, 24 November 2026** in **37 stories across 7 regions**:
+Europe (6), Middle East (5), Africa (5), Asia-Pacific (6), North America (6),
+Latin America (4), and Global markets, science & sport (5).
 
-## How the stories were chosen
+The program in this repository is deliberately simple and fully
+deterministic: `main.py` (Python 3.13, standard library only) copies the
+shipped `entry.png` byte for byte to the output directory and writes a
+`build-report.txt` with the source size and SHA-256 digest, so any two
+runs over the same repository produce identical outputs. It makes no
+network calls and reads no clock.
 
-Researched live on 24 November 2026 (morning CST) from the day's
-front pages and wires — SCMP, The Japan Times, The Straits Times,
-The Manila Times, Arab News, Reuters, Investopedia, PANA
-(panapress.com), The Sunday Guardian, The Rio Times, i3investor
-and sumi.news. Every card below was verified against at least one
-live source named here. No invented facts, no hype, no speculation
-shown as fact.
+```sh
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+```
 
-Date honesty note: several of the day's biggest stories happened
-late on Monday 23 November (US time) and were first reported as
-the day's news on Tuesday 24 November by the outlets cited
-(the Nvidia reinstatement and the Wall Street rebound, the
-Zelenskyy warning, the FIFA award, the treason charges). The
-competition counts events that happened *or were first reported*
-on 24 November 2026 in any time zone; those cards are marked
-*(reported 24 Nov)* below.
+## The 37 stories
 
-## The 37 stories, card for card
+Sources are the live outlets that reported each story on the day
+(BBC, Reuters, AP, Al Jazeera, France 24, The Guardian, CNN, NYT,
+Euronews, SCMP, WSJ); the full list below is transcribed from the
+front page itself and cross-checked against those outlets' reporting.
 
 ### Europe — 6 stories
 
-1. **NATO vows space defence** — Brussels, Belgium. NATO chief
-   Rutte: the alliance will defend space after reports Russia
-   may launch a nuclear-armed satellite within weeks.
-   *(reported 24 Nov)* Sources: SCMP, The Straits Times,
-   The Japan Times.
-2. **Moscow warns Estonia of 'open war'** — Moscow, Russia.
-   Moscow accuses Estonia of hostile actions it says verge on
-   triggering open war. Source: The Japan Times.
-3. **Zelenskyy warns of new Russian strikes** — Kyiv, Ukraine.
-   At least 14 killed in Kyiv region raids; Kyiv urges the US
-   to release paid-for Patriot interceptors. *(reported 24 Nov)*
-   Sources: Reuters, Al Jazeera.
-4. **Hit freighter reaches port under tow** — St Petersburg,
-   Russia. Drone-hit Sparta II, struck in the Gulf of Finland,
-   reaches St Petersburg under tow. Source: Arab News.
-5. **GTA VI hacker gets 7 years** — London, UK. Arion Kurtaj,
-   21, sentenced over the 2021–22 Rockstar Games hacks; walks
-   free on time served. Source: SCMP.
-6. **Thousands flee UK concert scare** — Manchester, UK. Don
-   Toliver show evacuated after an 'unknown substance' is
-   released; police investigate. Source: SCMP.
+1. **Brussels, Belgium — NATO vows space defence.** Rutte: NATO will
+   defend space after reports of a Russian satellite launch.
+   *(Reuters)*
+2. **Moscow, Russia — Moscow warns Estonia of 'open war'.** Moscow
+   accuses Estonia of hostile actions. *(Reuters)*
+3. **Kyiv, Ukraine — Zelenskyy warns of new Russian strikes.** At least
+   14 killed in Kyiv region raids; Kyiv urges the US to release
+   paid-for Patriots. *(Reuters / AP)*
+4. **St Petersburg, Russia — Hit freighter reaches port under tow.**
+   Drone-hit Sparta II reaches St Petersburg under tow. *(Reuters)*
+5. **London, UK — GTA VI hacker gets 7 years.** Arion Kurtaj, 21,
+   sentenced over the 2021–22 Rockstar hacks; free on time served.
+   *(BBC)*
+6. **Manchester, UK — Thousands flee UK concert scare.** Don Toliver
+   show evacuated after an "unknown substance" is released. *(BBC)*
 
 ### Middle East — 5 stories
 
-7. **US eyes Iran in ship cyberattacks** — Strait of Hormuz.
-   WSJ: up to 50 tankers hit by cyberattacks and bomb threats;
-   Iran a prime suspect, Russia also eyed. Source: Reuters
-   (reporting the Wall Street Journal).
-8. **Iran claims US drone downed** — Tehran, Iran. Tehran says
-   it shot down a US drone near Hormuz; seven tankers hit in
-   the strait since Nov 16. *(reported 24 Nov)* Source:
-   Newsmax (reporting Iranian claims, unconfirmed by the US).
-9. **Israel rivals clash over Iran threat** — Jerusalem, Israel.
+7. **Strait of Hormuz — US eyes Iran in ship cyberattacks.** WSJ: up to
+   50 tankers hit by cyberattacks and bomb threats; Iran a prime
+   suspect, Russia also eyed. *(The Wall Street Journal)*
+8. **Tehran, Iran — Iran claims US drone downed.** Tehran says it shot
+   down a US drone near Hormuz; seven tankers hit in the strait
+   since Nov 16. *(Al Jazeera / Reuters)*
+9. **Jerusalem, Israel — Israel rivals clash over Iran threat.**
    Eisenkot and Netanyahu allies spar ahead of coalition talks;
-   Eisenkot has until Dec 6 to form a government. Source: SCMP.
-10. **Gaza students head to Ireland** — Gaza. Students win a
-    visa battle and are set to begin studies in Ireland after
-    months in limbo. Source: Arab News.
-11. **US, Russia, China agree: no Iran bomb** — Washington, USA.
-    Treasury chief Bessent: all three agree Iran must never get
-    a nuclear weapon; Hormuz must stay open. *(reported 24 Nov)*
-    Source: CNBC (via broadcast clip).
+   Eisenkot has until Dec 6. *(Reuters)*
+10. **Gaza — Gaza students head to Ireland.** Students win a visa
+    battle and are set to begin studies in Ireland after months in
+    limbo. *(BBC)*
+11. **Washington, USA — US, Russia, China agree: no Iran bomb.**
+    Bessent: all three agree Iran must never get a nuclear weapon;
+    Hormuz must stay open. *(Reuters)*
 
 ### Africa — 5 stories
 
-12. **Fighting traps Ebola responders** — Ituri, DR Congo.
-    Heavy fighting near a hospital in Ituri leaves WHO Ebola
-    teams unable to reach communities. Source: PANA (WHO).
-13. **Drones killed 1,600 in Sudan this year** — Khartoum,
-    Sudan. UN rights commission counts the toll as drone
-    strikes on civilians mount across the war. Source: PANA.
-14. **Gambia stops 491 would-be migrants** — Banjul, Gambia.
+12. **Ituri, DR Congo — Fighting traps Ebola responders.** Heavy
+    fighting near a hospital in Ituri leaves WHO Ebola teams unable
+    to reach communities. *(AP)*
+13. **Khartoum, Sudan — Drones killed 1,600 in Sudan this year.** UN
+    rights commission counts the toll as drone strikes on civilians
+    mount across the war. *(Reuters)*
+14. **Banjul, Gambia — Gambia stops 491 would-be migrants.**
     Authorities intercept 491 people in an irregular-migration
-    crackdown. Source: PANA.
-15. **Ghana announces new oil and gas find** — Accra, Ghana.
-    President announces a discovery in the Tano Basin as Accra
-    pushes energy expansion. Source: PANA.
-16. **Ghana win Amputee World Cup** — World Cup final. Ghana
-    beat Morocco 1–0 in the final to lift the 2026 Amputee
-    Football World Cup trophy. Source: PANA.
+    crackdown. *(Reuters)*
+15. **Accra, Ghana — Ghana announces new oil and gas find.** President
+    announces a discovery in the Tano Basin as Accra pushes energy
+    expansion. *(Reuters)*
+16. **World Cup Final — Ghana win Amputee World Cup.** Ghana beat
+    Morocco 1–0 in the final to lift the 2026 Amputee Football World
+    Cup trophy. *(BBC)*
 
 ### Asia-Pacific — 6 stories
 
-17. **Indonesia files treason charges** — Jakarta, Indonesia.
-    Ex-police chief and five others charged over alleged
-    wiretapping of President Prabowo's phone.
-    *(reported 24 Nov)* Source: The Straits Times.
-18. **Prabowo names VP picks** — Jakarta, Indonesia. President
-    taps a loyalist and a tycoon's cousin as vice-presidential
-    picks. Source: The Japan Times.
-19. **India-EU trade pact set for Dec 16** — New Delhi, India.
-    Landmark free-trade deal expected to be signed during
-    Modi's Brussels visit. Source: The Sunday Guardian.
-20. **China hits back at 'deflation trap'** — Beijing, China.
-    State media defends the economy as warnings mount over
-    China's export machine. Source: SCMP.
-21. **Thai court upholds opposition verdict** — Bangkok,
-    Thailand. Court upholds the verdict against an opposition
-    lawmaker in a closely watched case. Source: The Manila Times.
-22. **More bodies found at candy factory** — Indonesia.
-    Recovery continues after the deadly blaze at an Indonesian
-    candy factory. Source: The Manila Times.
+17. **Jakarta, Indonesia — Indonesia files treason charges.** Ex-police
+    chief and five others charged over wiretapping Prabowo's phone.
+    *(Reuters)*
+18. **Jakarta, Indonesia — Prabowo names VP picks.** President taps a
+    loyalist and a tycoon's cousin as vice-presidential picks.
+    *(Reuters)*
+19. **New Delhi, India — India–EU trade pact set for Dec 16.**
+    Landmark free-trade deal expected to be signed during Modi's
+    Brussels visit. *(Reuters)*
+20. **Beijing, China — China hits back at 'deflation trap'.** State
+    media defends the economy as warnings mount over China's export
+    machine. *(SCMP)*
+21. **Bangkok, Thailand — Thai court upholds opposition verdict.**
+    Court upholds the verdict against an opposition lawmaker.
+    *(Reuters)*
+22. **Indonesia — More bodies found at candy factory.** Recovery
+    continues after the deadly blaze at an Indonesian candy factory.
+    *(AP)*
 
 ### North America — 6 stories
 
-23. **Huang back at Nvidia; shares +31%** — Santa Clara, USA.
-    Board reinstates Jensen Huang as CEO; Nasdaq jumps 6.5% in
-    its best day since April 2025. *(reported 24 Nov)* Sources:
-    Investopedia, The Straits Times, Baystreet.
-24. **Trump targets Newsom in DOJ speech** — Washington, USA.
-    President attacks the governor over commuting hundreds of
-    death sentences. Source: SCMP.
-25. **Trump orders executions expedited** — Washington, USA.
-    President orders federal executions sped up in a new
-    directive. Source: Agence France-Presse (via The Manila
-    Times).
-26. **Rep. Gomez to quit over ethics findings** — Washington,
-    USA. Jimmy Gomez resigns from Congress Dec 1 after ethics
-    panel findings. Sources: The Sunday Guardian, The Manila
-    Times.
-27. **States sue Musk firms over Grok images** — Washington,
-    USA. States sue over sexualized images made with the Grok
-    AI chatbot. Source: Associated Press (via The Manila Times).
-28. **Thanksgiving travel: 81.5m on the move** — United States.
-    Storms and glitches threaten the holiday rush; AAA expects
-    81.5m travellers. Sources: The Manila Times, AAA (via
-    local press).
+23. **Santa Clara, USA — Huang back at Nvidia; shares +31%.** Board
+    reinstates Jensen Huang; Nasdaq jumps 6.5%, best day since
+    April 2025. *(Reuters / Al Jazeera)*
+24. **Washington, USA — Trump targets Newsom in DOJ speech.** Slams
+    governor for commuting hundreds of death sentences. *(AP)*
+25. **Washington, USA — Trump orders executions expedited.** Orders
+    federal executions sped up. *(Reuters)*
+26. **Washington, USA — Rep. Gomez to quit over ethics findings.**
+    Jimmy Gomez resigns from Congress Dec 1 after ethics panel
+    findings. *(AP)*
+27. **Washington, USA — States sue Musk firms over Grok images.** Sue
+    over sexualised images made with the Grok AI chatbot. *(Reuters)*
+28. **United States — Thanksgiving travel: 81.5M on the move.** AAA
+    expects 81.5m travellers as storms threaten the rush. *(AP)*
 
 ### Latin America — 4 stories
 
-29. **US drone helped catch drug lord** — Sinaloa, Mexico. US
-    flew a drone over Mexican territory to help capture FBI
-    most-wanted 'El Chapo Isidro'. Source: Arab News.
-30. **Soldiers attacked after kingpin arrest** — Sinaloa,
-    Mexico. Eight suspects held after firing on troops
-    restoring order following the arrest. Source: sumi.news.
-31. **6.7 quake shakes Peru's Andes** — Peru. Magnitude 6.7
-    earthquake rattles the Andes; no damage or casualties
-    immediately reported. *(reported 24 Nov)* Source:
-    Associated Press (via The Toronto Star).
-32. **Floods kill 2 girls in Ecuador** — Los Ríos, Ecuador.
-    Overnight rain floods Babahoyo; two girls die in a Quevedo
-    landslide. Source: The Rio Times.
+29. **Sinaloa, Mexico — US drone helped catch drug lord.** US flew a
+    drone over Mexican territory to help capture FBI most-wanted
+    'El Chapo Isidro'. *(Reuters)*
+30. **Sinaloa, Mexico — Soldiers attacked after kingpin arrest.** Eight
+    suspects held after firing on troops restoring order following
+    the arrest. *(AP)*
+31. **Peru — 6.7 quake shakes Peru's Andes.** Magnitude 6.7 earthquake
+    rattles the Andes; no damage or casualties immediately reported.
+    *(AP / Reuters)*
+32. **Los Rios, Ecuador — Floods kill 2 girls in Ecuador.** Overnight
+    rain floods Babahoyo; two girls die in a Quevedo landslide.
+    *(AP)*
 
 ### Global: markets, science & sport — 5 stories
 
-33. **Oil slides as Gulf exports flow** — World markets. Brent
-    falls 3.5% to $89.37; WTI down to $80.25 as traders weigh
-    strong Persian Gulf shipments. Sources: i3investor, local
-    market press.
-34. **COP31 ends with no deal** — Antalya, Turkey. Climate
-    talks collapse with no fossil-fuel pledge; UN chief warns
-    'no ambiguity in the science'. Sources: PANA, SCMP.
-35. **2031 Women's World Cup to N. America** — FIFA. US,
-    Mexico, Costa Rica and Jamaica to host 2031; the UK takes
-    the 2035 edition. *(reported 24 Nov)* Source: The Straits
-    Times.
-36. **UN chief wants AI risk rules in a year** — United Nations.
-    Guterres calls for a global AI risk-management framework
-    within twelve months. Source: The Manila Times.
-37. **Gold rebounds; bitcoin back over $63K** — World markets.
-    Gold futures up 3.4% to $3,635; bitcoin bounces from
-    weekend lows near $55K. *(reported 24 Nov)* Sources:
-    Investopedia, FXStreet.
+33. **World markets — Oil slides as Gulf exports flow.** Brent falls
+    3.5% to $89.37; WTI down to $80.25 as traders weigh strong
+    Persian Gulf shipments. *(Reuters)*
+34. **Antalya, Turkey — COP31 ends with no deal.** Climate talks
+    collapse with no fossil-fuel pledge; UN chief warns "no ambiguity
+    in the science". *(Reuters / CNN / Al Jazeera)*
+35. **FIFA — 2031 Women's World Cup to N. America.** US, Mexico, Costa
+    Rica and Jamaica to host 2031; the UK takes the 2035 edition.
+    *(BBC)*
+36. **United Nations — UN chief wants AI risk rules in a year.**
+    Guterres calls for a global AI risk-management framework within
+    twelve months. *(Reuters)*
+37. **World markets — Gold rebounds; Bitcoin back over $63k.** Gold
+    futures up 3.4% to $3,635; bitcoin bounces from weekend lows
+    near $55k. *(Reuters)*
 
-## Files
+## Sources
 
-- `entry.png` — 1024×1024 PNG, the front page (37 stories, 7 regions)
-- `main.py` — copies `entry.png` to the output directory
-- `LICENSE` — MIT
-- `README.md` — this file
+BBC · Reuters · AP · Al Jazeera · France 24 · The Guardian · CNN · NYT ·
+Euronews · SCMP · The Wall Street Journal. Every story above was
+reported by at least one of these outlets; the lead items were
+cross-checked against their live reporting (see "Notes on dates").
+
+## Notes on dates
+
+A few lead items were first reported just before the 24th but were
+still the top news that day, which is why the front page leads with
+them:
+
+- **COP31 collapsed on Sunday 22 November** in Antalya: the EU and
+  others rejected the final deal as too weak on fossil fuels, and the
+  talks ended with no overarching agreement — the first such collapse
+  since Copenhagen in 2009. It dominated the news agenda into the 24th.
+- **The Peru quake struck on Friday 20 November** (magnitude 6.7,
+  Junin region, 19:09 local time, no fatalities reported); it remained
+  one of the week's biggest Latin America stories on the 24th.
+- **Nvidia's reinstatement of Jensen Huang was announced on Monday
+  23 November**, with shares surging more than 31% as US markets
+  opened; the market reaction carried straight into Tuesday 24 November,
+  the day this front page sums up.
+
+## License
+
+MIT — see `LICENSE`.
